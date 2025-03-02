@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shri Mahalaxmi Dhamaka 2025</title>
+    
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            background-image: url('https://img.freepik.com/premium-vector/abstract-gradient-background-bokeh-light-bright-gold-gradient-color-background-vector-illustration-backdrop-website-banner-poster_58717-806.jpg?semt=ais_hybrid'); /* Replace with your image URL */
+            background-size: cover; /* Ensures it covers the whole page */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; /* Prevents repeating */
+            background-attachment: fixed; /* Keeps the image fixed when scrolling */
+        }
+
+        /* Header Styling */
+        header {
+            font-size: 35px;
+            color: #000000;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 18%;
+            background-color: rgba(255, 223, 0, 0.9); /* Semi-transparent background */
+            z-index: -1;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        /* Container for All Main Content */
+        .container {
+            padding: 20px;
+        }
+
+        /* Slider Styling */
+        .slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 400px; /* Increased height */
+}
+
+.slider-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-images img {
+    width: 100%;
+    height: 100%; /* Ensure images take full slider height */
+    object-fit: cover; /* Maintain aspect ratio and fit */
+    margin: 0;
+}
+
+        .nav-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 10;
+        }
+        .nav-button.left {
+            left: 10px;
+        }
+        .nav-button.right {
+            right: 10px;
+        }
+
+        /* Offers Section */
+        .offers {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .offer {
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .offer img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .offer h3 {
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+
+        /* Details Section */
+        .details {
+            background: #e6f2ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .details h2 {
+            margin-top: 0;
+            color: #003366;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+           background-color: rgba(255, 223, 0, 0.9);
+            color: black; 
+            padding: 10px;
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 0;
+        }
+
+        /* Book Now Button Styling */
+        .book-now-btn, .next-booking-btn {
+            display: inline-block;
+            text-decoration: none;
+            background-color: rgba(255, 223, 0, 0.9);
+            color: black; 
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .next-booking-btn {
+            background-color: #FF6600; /* Different color for next booking */
+        }
+
+        /* QR Image Styling */
+        .qr-image {
+            width: 150px; /* Adjusted size for QR code image */
+            margin-top: 20px;
+        }
+
+        /* Make it responsive for mobile */
+        @media (max-width: 768px) {
+            header {
+                font-size: 28px;
+            }
+            .offer h3 {
+                font-size: 1rem;
+            }
+            .slider {
+                height: 200px;
+            }
+            .details {
+                padding: 15px;
+            }
+            .social-links img {
+                width: 35px;
+                height: 35px;
+            }
+            .container {
+                padding: 10px;
+            }
+            .slider-images img {
+                width: 100%;
+                height: auto;
+            }
+            .center-section img {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                font-size: 24px;
+            }
+            .slider {
+                height: 150px;
+            }
+            .offer h3 {
+                font-size: 0.9rem;
+            }
+            .details {
+                padding: 10px;
+            }
+            .qr-image {
+                width: 120px;
+            }
+        }
+
+        /* Social Media Links Styling */
+        .social-links {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            justify-content: center;
+        }
+        .social-links img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+        .social-links img:hover {
+            transform: scale(1.2);
+        }
+
+        .center-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 20px;
+        }
+	nav {
+    background-color: rgba(255, 223, 0, 0.9); /* Yellow shade */
+    padding: 10px; /* Add some padding */
+    text-align: center; /* Center align links */
+}
+
+nav a {
+    color: black; /* Set text color */
+    text-decoration: none; /* Remove underline */
+    margin: 0 15px; /* Add spacing between links */
+    font-weight: bold; /* Make text bold */
+}
+
+nav a:hover {
+    color: white; /* Change color on hover */
+}
+	.info-section {
+        line-height: 1.2; /* Adjust this value as needed */
+    }
+    </style>
+</head>
+<body>
+
+    <header>
+        <p><b>श्री महालक्ष्मी धमाका 2025</b><br>
+        <b>संपूर्ण महाराष्ट्रात 22000 कुपनांचा अप्रतिम बक्षिसांचा महोत्सव!</b>
+	<nav>
+            <a href="#img">Home</a>
+            <a href="#offers">offers</a>
+            <a href="#details">details</a>
+	    <a href="#contact">contact us</a>
+        </nav></p>
+    </header>
+
+
+    <div class="slider">
+        <div class="slider-images">
+            <img src="https://i.imgur.com/w3fc4TB.jpeg" alt="Img111">
+            <img src="https://i.imgur.com/Z7vxkrP.png" alt="Image prise 1">
+            <img src="https://i.imgur.com/6tYFF0V.png" alt="Image prise 2">
+            <img src="https://i.imgur.com/9OvwSZV.jpeg" alt="Image prise 3">
+            <img src="https://i.imgur.com/hViVJ4z.png" alt="Image prise 4">
+            <img src="https://i.imgur.com/0nJFHkv.png" alt="Image prise 5">
+            <img src="https://i.imgur.com/d4IQrCm.png" alt="Image prise 6">
+            <img src="https://i.imgur.com/MlFuQKl.png" alt="Image prise 7">
+            <img src="https://i.imgur.com/aqBoIhg.png" alt="Image prise 8">
+            <img src="https://i.imgur.com/8SFqQQn.png" alt="Image prise 9">
+            <img src="https://i.imgur.com/uptORel.png" alt="Image prise 10">
+        </div>
+        <button class="nav-button left" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="nav-button right" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+<section id="img" class="img">
+    <img src="https://i.imgur.com/aXwXpSl.png" alt="Right Side Image" style="display: block; margin: 80px auto; width: 80%; height: auto;">
+</section>
+
+    <div class="container"> 
+        <section id="offers" class="offers">
+            <div class="offer">
+                <img src="https://i.pinimg.com/236x/fb/ea/6a/fbea6a29a01e303f83b37864d3b78141.jpg" alt="प्रथम बक्षीस">
+                <h3>प्रथम बक्षीस - मॉडल 2023</h3>
+            </div>
+            <div class="offer">
+                <img src="https://th.bing.com/th/id/OIP.1NxMg2O1BI8VAF8foeVhCgHaFj?rs=1&pid=ImgDetMain" alt="द्वितीय बक्षीस">
+                <h3>द्वितीय बक्षीस - मॉडल 2019</h3>
+            </div>
+            <div class="offer">
+                <img src="https://etautolytics.com/files/retail_files/ertiga-1502362275-prod-var.png" alt="तृतीय बक्षीस">
+                <h3>तृतीय बक्षीस - मॉडल 2015</h3>
+            </div>
+            <div class="offer">
+                <img src="https://etautolytics.com/files/retail_files/ertiga-1502362275-prod-var.png" alt="चौथे बक्षीस">
+                <h3>चौथे बक्षीस - मॉडल 2014</h3>
+            </div>
+            <div class="offer">
+                <img src="https://etautolytics.com/files/retail_files/ertiga-1502362275-prod-var.png" alt="पाचवे बक्षीस">
+                <h3>पाचवे बक्षीस - मॉडल 2012</h3>
+            </div>
+            <div class="offer">
+                <img src="https://www.autovista.in/assets/img/new_cars_colour_variants/swift-colour-pearl-arctic-white.jpg" alt="सहावे बक्षीस">
+                <h3>सहावे बक्षीस - मॉडल 2022</h3>
+            </div>
+            <div class="offer">
+                <img src="https://th.bing.com/th/id/OIP.yUqnwgRpGsTubaMurL6rugHaFj?pid=ImgDet&w=184&h=138&c=7&dpr=1.3" alt="सातवे बक्षीस">
+                <h3>सातवे बक्षीस - मॉडल 2015</h3>
+            </div>
+            <div class="offer">
+                <img src="https://th.bing.com/th/id/OIP.Voj3UO-4T4Z1wCWCaQM9ngHaHa?w=167&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="आठवे बक्षीस">
+                <h3>आठवे बक्षीस - मॉडल 2022</h3>
+            </div>
+            <div class="offer">
+                <img src="https://th.bing.com/th/id/OIP.91h66zAPl6blnkXOj2TKMwHaHa?w=179&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="नववे बक्षीस">
+                <h3>नववे बक्षीस - मॉडल 2022</h3>
+            </div>
+            <div class="offer">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2021/3/RR/JT/BV/19093188/new-product-500x500.jpeg" alt="दशवे बक्षीस">
+                <h3>दशवे बक्षीस </h3>
+            </div>
+        </section>
+
+
+<!-- details-->
+        <section id="details" class="section">
+            <img src="https://i.imgur.com/KVxdI2g.png" alt="Right Side Image" style="float: right; width: 100%; max-width: 400px; height: auto; margin: 50px;left: 10px">
+
+            <h2>कुपनचे नियम व तपशील</h2>
+            <ul>
+                <li>कुपनची किंमत: ₹1001/-</li>
+                <li>एकूण कुपन संख्या: 22000</li>
+                <li>इंस्टाग्राम लाइव्ह द्वारे बक्षिसांचे वाटप होईल.</li>
+                <li>बक्षिसांचा खर्च ग्राहकांकडून घेतला जाणार नाही.</li>
+                <li>पूर्ण कुपन विकल्यानंतरच गिफ्ट वितरण सुरू होईल.</li>
+            </ul>
+            <h2>देयक रक्कम</h2>
+            <p>
+                <img class="qr-image" src="https://i.imgur.com/U6Q3yzo.jpeg" alt="gPay QR"><br>
+                <a href="upi://pay?pa=amkarmakarand1@axl&pn=Amkar_Makarand&am=1001&cu=INR">Pay ₹1001 Through UPI</a>
+            </p>
+        </section>
+
+
+
+        <div class="center-section">
+            <h2>माहिती</h2>
+           <div class="info-section">
+    <h2>🎉 लकी ड्रॉ स्कीम – 22,000 बक्षिसांसह शानदार संधी! 🎉</h2>
+    
+    <p><strong>✅ प्रिबुक करण्यासाठी:</strong> संपूर्ण नाव, संपूर्ण पत्ता, मोबाइल नंबर, आमच्या PhonePe / Google Pay वर फक्त ₹1 पाठवा.</p>
+
+    <p>📢 80% कुपन विक्री झाल्यानंतर आम्ही तुम्हाला संपर्क साधू. त्यानंतर तुम्ही उर्वरित ₹1000 भरून आपले कुपन खरेदी करू शकता.</p>
+
+    <p>🔹 <strong>डायरेक्ट कुपनसाठी</strong>: ₹1001 भरून त्वरित कुपन मिळवा.</p>
+
+    <p>🔹 <strong>कस्टमरचा विश्वास आणि पारदर्शकता!</strong> आमचा लकी ड्रॉ पूर्णपणे कायदेशीर व पारदर्शक आहे.</p>
+
+    <p>✔ संपूर्ण सोडत YouTube Live वर दाखवली जाईल.</p>
+    <p>✔ 22,000 कुपन आणि 22,000 बक्षिसे – प्रत्येक कुपनधारक जिंकणारच!</p>
+    <p>✔ हजारो लोकांनी सहभाग घेतला आहे आणि लवकरच विक्री पूर्ण होईल.</p>
+
+    <h3>📢 💬 महत्वाची सूचना:</h3>
+    <p>प्रिय ग्राहक, कॉल संख्येमुळे आम्ही फक्त <strong>व्हाट्सअप</strong> द्वारे संवाद साधत आहोत. कृपया <strong>8888546042</strong> वर तुमची माहिती पाठवा.</p>
+
+    <p>📩 तुमची माहिती आणि पेमेंट डिटेल्स व्हाट्सअपवर पाठवा.</p>
+
+    <p>💥 <strong>मोठे बक्षिसे जिंकण्याची सुवर्णसंधी! संधी दवडू नका!</strong></p>
+
+    <h3>📍 पत्ता:</h3>
+    <p>दहेगाव कोराळे, ता. राहता, जि. अहिल्यानगर</p>
+
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScO_2G55Bu0_j7H-Wu0VsdtsZJt57lzYJM5fQ30iULAKZ1p_g/viewform" class="book-now-btn">फॉर्म भरावा</a>
+</div>
+
+	<section id="contact" class="contact">
+                    <div class="social-links">
+                    <p>Contact us on:</p>
+                    <a href="https://www.facebook.com/share/1HJ8xKpRyu/" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/shree_mahalaxmi_dhamaka2025?igsh=b3l0dHZ5YXc1Z2ph" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                    </a>
+                    <a href="https://youtube.com/@shreemahalaxmidhamaka2025?si=z_MRznCpwEMe7k8h" target="_blank">
+                        <img src="https://i.pinimg.com/236x/3a/36/20/3a36206f35352b4230d5fc9f17fcea92.jpg" alt="YouTube">
+                    </a>
+                    <a href="https://whatsapp.com/channel/0029Vb4ADG9Fi8xmVJOzWD20" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+                    </a>
+                    <br>
+                </div>    <p>📞 Contact: 8888546042 | ✉ Email: makarandamkar1189@gmail.com</p> 
+            </div>
+           
+            <!-- Centered Section Ends Here -->
+        </div>
+	<section>
+        <footer>
+            
+            <p>© 2025 Shri Mahalaxmi Dhamaka. All rights reserved.</p>
+        </footer>
+    </div>
+
+   <script>
+    let slideIndex = 0;
+
+    function moveSlide(step) {
+        const slides = document.querySelectorAll('.slider-images img');
+        slideIndex += step;
+        if (slideIndex < 0) {
+            slideIndex = slides.length - 1;
+        } else if (slideIndex >= slides.length) {
+            slideIndex = 0;
+        }
+        const offset = -slideIndex * 100;
+        document.querySelector('.slider-images').style.transform = `translateX(${offset}%)`;
+    }
+</script>
+
+</body>  
+</html>
